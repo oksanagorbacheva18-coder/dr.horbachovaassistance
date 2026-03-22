@@ -157,7 +157,7 @@
            
             btn.disabled = true; btnText.textContent = 'ВІДПРАВЛЯЄМО...'; btnLoader.classList.remove('hidden');
             try {
-                const response = await fetch('https://n8n-production-76ce.up.railway.app/webhook/заявка', {
+                const response = await fetch('https://n8n-production-76ce.up.railway.app/webhook-test/заявка', {
                     method: 'POST', headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
                 });
